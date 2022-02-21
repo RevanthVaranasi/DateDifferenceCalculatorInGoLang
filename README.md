@@ -1,4 +1,4 @@
-#Date Difference in days Go lang CLI application
+#Date difference in days Go lang CLI Application
 Problem statement:
 
 To calculate the distance in whole days between two dates, counting only the days in between those dates, For example 01/01/2001 to 03/01/2001 yields “1”. The valid date range is between 01/01/1900 and 31/12/2999, all other dates should be rejected.
