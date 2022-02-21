@@ -23,6 +23,7 @@ func main() {
 		11: 30,
 		12: 31,
 	}
+	//Reading user input
 	scanner := bufio.NewScanner(os.Stdin)
 	projectName := "dateDifferenceInDays"
 	var dates []string
@@ -36,6 +37,7 @@ func main() {
 		fmt.Println("Enter two different dates but not the same")
 		return
 	}
+	//Parsing the input dates in to variables
 	days1, errd1 := strconv.Atoi(strings.Split(dates[0], "/")[0])
 	days2, errd2 := strconv.Atoi(strings.Split(dates[1], "/")[0])
 	months1, errm1 := strconv.Atoi(strings.Split(dates[0], "/")[1])
@@ -49,6 +51,7 @@ func main() {
 	if errd1 != nil || errd2 != nil || errm1 != nil || errm2 != nil || erry1 != nil || erry2 != nil {
 		panic("error")
 	}
+	//Actual logic of the application starts here
 	var monthDays1 int
 	var monthDays2 int
 	for i := 0; i < months1; i++ {
